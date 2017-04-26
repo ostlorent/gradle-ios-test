@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="IosSauceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-25T14:51:37" hostname="Laurents-MacBook-Pro.local" time="206.396">
+<testsuite name="IosSauceTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2017-04-26T08:30:55" hostname="Laurents-MacBook-Pro.local" time="257.999">
   <properties/>
-  <testcase name="goToLoginScreen" classname="IosSauceTest" time="206.396"/>
+  <testcase name="goToLoginScreen" classname="IosSauceTest" time="257.999"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
