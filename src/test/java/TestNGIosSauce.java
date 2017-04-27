@@ -60,8 +60,8 @@ public class TestNGIosSauce implements SauceOnDemandSessionIdProvider, SauceOnDe
     @DataProvider(name = "hardCodedBrowsers", parallel = true)
     public static Object[][] sauceBrowserDataProvider(Method testMethod) {
         return new Object[][]{
-                new Object[]{"iOS", "iPhone 7", "10.2", "sauce-storage:ocsios.ipa", "", "portrait", "1.6.3"},
-                new Object[]{"iOS", "iPhone 6", "10.2", "sauce-storage:ocsios.ipa", "", "portrait", "1.6.3"},
+                new Object[]{"iOS", "iPhone 7 Device", "10.2", "sauce-storage:ocsios.ipa", "", "portrait", "1.6.3"},
+                new Object[]{"iOS", "iPhone 6 Device", "10.2", "sauce-storage:ocsios.ipa", "", "portrait", "1.6.3"},
         };
     }
 
