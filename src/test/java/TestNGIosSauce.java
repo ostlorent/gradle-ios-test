@@ -116,7 +116,7 @@ public class TestNGIosSauce implements SauceOnDemandSessionIdProvider, SauceOnDe
      * @throws Exception if an error occurs during the running of the test
      */
     @Test(dataProvider = "hardCodedBrowsers")
-    public void addContactTest(String platformName, String deviceName, String platformVersion, String app, String browserName, String deviceOrientation, String appiumVersion, Method method) throws Exception {
+    public void acceptNotifications(String platformName, String deviceName, String platformVersion, String app, String browserName, String deviceOrientation, String appiumVersion, Method method) throws Exception {
         WebDriver driver = createDriver(platformName, deviceName, platformVersion, app, browserName, deviceOrientation, appiumVersion, method.getName());
 
         WebDriverWait webDriverWait = new WebDriverWait(driver, 60);
@@ -124,11 +124,11 @@ public class TestNGIosSauce implements SauceOnDemandSessionIdProvider, SauceOnDe
         webDriverWait.until(ExpectedConditions.alertIsPresent());
         driver.switchTo().alert().accept();
 
-        webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.id("burger_icon")));
+        // webDriverWait.until(ExpectedConditions.presenceOfElementLocated(By.id("burger_icon")));
 
-        WebElement burger = driver.findElement(By.id("burger_icon"));
+        // WebElement burger = driver.findElement(By.id("burger_icon"));
 
-        burger.click();
+        // burger.click();
 
    /*     WebElement addContactButton = driver.findElement(By.name("Add Contact"));
         addContactButton.click();
